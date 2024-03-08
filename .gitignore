@@ -22,3 +22,4 @@ go.work
 
 # Go build objects
 build/
+peerid.key
