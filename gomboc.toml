@@ -1,0 +1,29 @@
+[server]
+host = "0.0.0.0"
+port = 7457
+authtype = "jwt"
+
+[server.api]
+host = "0.0.0.0"
+port = 7458
+authtype = "jwt"
+
+[server.dashboard]
+host = "0.0.0.0"
+port = 7459
+authtype = "basic"
+
+[server.database]
+host = "0.0.0.0"
+port = 7459
+username = "username"
+password = "password"
+
+[client]
+[client.web]
+host = "0.0.0.0"
+port = 80
+
+[client.ssh]
+host = "0.0.0.0"
+port = 22
