@@ -21,6 +21,6 @@ var rdvCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(rdvCmd)
 
-	rdvCmd.Flags().StringVarP(&rdvHost, "rdv-host", "", "", "RDV host address")
-	rdvCmd.Flags().IntVarP(&rdvPort, "rdv-port", "", 7020, "RDV port number")
+	rdvCmd.Flags().StringVarP(&rdvHost, "host", "", "", "RDV host address")
+	rdvCmd.Flags().IntVarP(&rdvPort, "port", "", 7020, "RDV port number")
 }
