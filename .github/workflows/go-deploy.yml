@@ -1,0 +1,23 @@
+name: Go Deploy
+
+on:
+  push:
+    branches: "*"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Create artifacts
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.22'
+
+    - name: Create binary artifacts
+      run: make build
+
+    - name: Create zip files for release
+      run: make compress
+
