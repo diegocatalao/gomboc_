@@ -1,10 +1,8 @@
-/*
-Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
 	"os"
+  
 	"time"
 
 	"github.com/rs/zerolog"
